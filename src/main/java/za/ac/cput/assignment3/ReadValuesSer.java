@@ -181,4 +181,16 @@ public class ReadValuesSer
             System.out.println(ioe.getMessage());
         }
     }
+    
+    //The main section in order to execute
+    public static void main(String[] args) {
+        ReadValuesSer obj = new ReadValuesSer();
+        obj.openfile();
+        obj.readFromFile();
+        obj.sortCustomer();
+        obj.sortSupplier();
+        obj.writeToFileCus();
+        obj.writeToFileSup();
+    }
+    
 }
